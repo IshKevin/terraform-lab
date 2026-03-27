@@ -13,6 +13,10 @@ aws s3api create-bucket \
   --bucket $BUCKET_NAME \
   --region $REGION
 
+aws s3api put-bucket-versioning \
+  --bucket $BUCKET_NAME \
+  --versioning-configuration Status=Enabled
+
 aws dynamodb create-table \
   --table-name $DYNAMODB_TABLE \
   --attribute-definitions AttributeName=LockID,AttributeType=S \
