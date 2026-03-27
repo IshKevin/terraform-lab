@@ -246,19 +246,6 @@ bash scripts/cleanup.sh
 * Improves management in AWS
 
 
-## Limitations
-
-* Single environment setup (no dev/prod separation)
-* Backend configuration requires manual input during initialization
-
-
-## Future Improvements
-
-* Multi-environment support (dev, staging, prod)
-* CI/CD pipeline integration (GitHub Actions)
-* Load balancer and auto scaling
-* Modular Terraform structure
-
 
 ##  Author
 
